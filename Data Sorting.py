@@ -115,10 +115,10 @@ for x in range(len(apr_dec2016)):
 
 for x in range(len(Jan_Present)):
     try:
-        KCRW2017.append(pd.read_csv('C:\\Users\\Uchenna\\Documents\\Python\\KCRW Source Files\\StreamGuys'+'\\KCRW_'+Jan_Present[x]+'.csv')) # THIS WILL BE THE SAVE SYNTAX!!!!
-        merginglist.append(pd.read_csv('C:\\Users\\Uchenna\\Documents\\Python\\KCRW Source Files\\StreamGuys'+'\\KCRW_'+Jan_Present[x]+'.csv'))
-        lenlist2017.append(len(pd.read_csv('C:\\Users\\Uchenna\\Documents\\Python\\KCRW Source Files\\StreamGuys'+'\\KCRW_'+Jan_Present[x]+'.csv')))
-        comblist.append(len(pd.read_csv('C:\\Users\\Uchenna\\Documents\\Python\\KCRW Source Files\\StreamGuys'+'\\KCRW_'+Jan_Present[x]+'.csv')))
+        KCRW2017.append(pd.read_csv('Path_to_File'+'\\KCRW_'+Jan_Present[x]+'.csv')) # THIS WILL BE THE SAVE SYNTAX!!!!
+        merginglist.append(pd.read_csv('Path_to_File'+'\\KCRW_'+Jan_Present[x]+'.csv'))
+        lenlist2017.append(len(pd.read_csv('Path_to_File'+'\\KCRW_'+Jan_Present[x]+'.csv')))
+        comblist.append(len(pd.read_csv('Path_to_File'+'\\KCRW_'+Jan_Present[x]+'.csv')))
     except FileNotFoundError:
         print('KCRW_'+Jan_Present[x]+'.csv',' file not found!, It must not have been downloaded yet, or was saved improperly')
 
